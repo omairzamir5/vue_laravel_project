@@ -18,4 +18,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+//login
 Route::middleware('auth:api')->post('/login', 'API\LoginController@login');
+
+//Users 
+Route::middleware('auth:api')->post('posts', 'UserController@store');
+Route::middleware('auth:api')->get('posts', 'UserController@get');
+Route::middleware('auth:api')->delete('posts/{id}', 'UserController@delete');
