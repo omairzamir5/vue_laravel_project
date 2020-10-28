@@ -20,5 +20,11 @@ export default [
     name: "Page 2",
     slug: "page2",
     icon: "FileIcon",
-  }
+  },
+  {
+    url: "/page3",
+    name: "User Lists",
+    slug: "page3",
+    icon: "FileIcon",
+  },
 ]

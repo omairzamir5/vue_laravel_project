@@ -1,7 +1,8 @@
 // axios
+
 import axios from 'axios'
 
-const baseURL = ''
+const baseURL = 'http://localhost/starter-kit/public/api/'
 
 export default axios.create({
   baseURL

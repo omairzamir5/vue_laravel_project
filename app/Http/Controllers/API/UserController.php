@@ -10,10 +10,7 @@ use App\SampleUsers;
 
 class UserController extends Controller
 {
-    public function index()
-    {
-        return User::latest()->get();
-    }
+
 
     public function store(Request $request)
     {   
@@ -36,11 +33,11 @@ class UserController extends Controller
         return response()->json($user);
     }
 
-    public function show($id)
+    public function show()
     {
         $user = SampleUsers::all();
 
-        return response()->json($user);
+        return response()->json(array('users' => $user));
     }
 
     public function update(Request $request, $id)

@@ -115,6 +115,10 @@ const mutations = {
     // Store data in localStorage
     localStorage.setItem("userInfo", JSON.stringify(userInfo))
   },
+
+  SAVE_USERS(state, users) {
+    state.users = users;
+  }
 }
 
 export default mutations
