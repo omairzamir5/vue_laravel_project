@@ -22,9 +22,9 @@ export default [
     icon: "FileIcon",
   },
   {
-    url: "/page3",
+    url: "/list",
     name: "User Lists",
-    slug: "page3",
+    slug: "list",
     icon: "FileIcon",
   },
 ]

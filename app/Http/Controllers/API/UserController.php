@@ -37,7 +37,7 @@ class UserController extends Controller
     {
         $user = SampleUsers::all();
 
-        return response()->json(array('users' => $user));
+        return response()->json($user);
     }
 
     public function update(Request $request, $id)

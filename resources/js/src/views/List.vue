@@ -1,3 +1,4 @@
+
 <template>
 	 <div>
     <vs-table :data="users">
@@ -47,14 +48,14 @@
 <script>
 export default {
 	computed: {
-  users() {
-	  console.log(this.$store.state.users['users']);
-    return this.$store.state.users['users'];
+    users() {
+      console.log(this.$store.state.users);
+      return this.$store.state.users;
+    }
+  },
+  created() {
+    this.$store.dispatch('loadUsers');
   }
-},
-created() {
-  this.$store.dispatch('loadUsers');
-}
 		
 }
 </script>

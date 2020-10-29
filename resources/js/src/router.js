@@ -42,9 +42,9 @@ const router = new Router({
                 component: () => import('./views/Page2.vue')
               },
               {
-                path: '/page3',
-                name: 'page-3',
-                component: () => import('./views/Page3.vue')
+                path: '/list',
+                name: 'User-list',
+                component: () => import('./views/List.vue')
               }
               
             ],
